@@ -11,7 +11,6 @@ MorseCode[word_mark] = word_mark
 MorseCode[letter_mark] = letter_mark
 MorseCode[ditdah_mark] = ditdah_mark
 
-
 msg2words = BJ_Layer(
     fn=lambda msg:(word+word_mark for word in msg.upper().split(" ") if len(word)),
     fn_inv = lambda words:" ".join([word[:-1] for word in words]))
@@ -38,11 +37,3 @@ if __name__ == "__main__":
         letter2dotsanddashes,
         dotordashormark2pulse
         ))
-    
-    
-
-
-    
-
-
-
